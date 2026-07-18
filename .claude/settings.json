@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Lovable__read_file",
+      "mcp__Lovable__list_files",
+      "mcp__Lovable__list_workspaces",
+      "mcp__Lovable__list_projects",
+      "mcp__Lovable__list_edits",
+      "mcp__Lovable__list_messages",
+      "mcp__Lovable__get_project",
+      "mcp__Lovable__get_project_knowledge",
+      "mcp__Lovable__get_database_status",
+      "mcp__Lovable__get_diff",
+      "mcp__Lovable__get_message",
+      "mcp__Lovable__get_workspace",
+      "mcp__Lovable__get_workspace_knowledge"
+    ]
+  }
+}
