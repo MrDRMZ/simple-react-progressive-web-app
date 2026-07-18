@@ -13,7 +13,8 @@
       "mcp__Lovable__get_diff",
       "mcp__Lovable__get_message",
       "mcp__Lovable__get_workspace",
-      "mcp__Lovable__get_workspace_knowledge"
+      "mcp__Lovable__get_workspace_knowledge",
+      "SendUserFile"
     ]
   }
 }
