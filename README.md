@@ -1,5 +1,32 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Moonshot Kimi K3
+
+This project includes Moonshot AI's Kimi K3 model via the OpenAI-compatible
+[`openai`](https://www.npmjs.com/package/openai) SDK. The client lives in
+`src/api/kimi.js` and targets the `kimi-k3` model at `https://api.moonshot.ai/v1`.
+
+To use it:
+
+1. Get an API key from the [Moonshot AI platform](https://platform.moonshot.ai/).
+2. Create a `.env` file in the project root with:
+
+   ```
+   REACT_APP_MOONSHOT_API_KEY=your-key-here
+   ```
+
+3. Restart the dev server, then call it from any component:
+
+   ```js
+   import { askKimi } from './api/kimi'
+
+   askKimi('Hello, Kimi!').then(reply => console.log(reply))
+   ```
+
+**Security note:** the key is bundled into the client in this setup, so anyone
+who opens the deployed site can read it. Keep this for local development only —
+proxy requests through a backend before deploying publicly.
+
 ## Available Scripts
 
 In the project directory, you can run:
